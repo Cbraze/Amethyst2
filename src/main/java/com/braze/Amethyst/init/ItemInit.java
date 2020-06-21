@@ -57,10 +57,10 @@ public class ItemInit {
         event.getRegistry().register(new ShovelItem(ModItemTier.EXAMPLE, 4, 4.0f, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_shovel"));
         event.getRegistry().register(new HoeItem(ModItemTier.EXAMPLE, 4.0f, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_hoe"));
 
-        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.HEAD, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_helmet"));
-        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.CHEST, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_chestplate"));
-        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.LEGS, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_leggings"));
-        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.FEET, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_boots"));
+        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.HEAD, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_helmet.json"));
+        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.CHEST, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_chestplate.json"));
+        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.LEGS, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_leggings.json"));
+        event.getRegistry().register(new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.FEET, new Item.Properties().group(Amethyst.AmethystItemGroup.instance)).setRegistryName("amethyst_boots.json"));
 
     }
 
@@ -116,8 +116,8 @@ public class ItemInit {
         }
     }
     public enum ModArmorMaterial implements IArmorMaterial {
-        AMETHYST("amethyst:amethyst_ingot", 60, new int[]{7, 9, 11, 7}, 420, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.9f, () -> {
-            return Ingredient.fromItems(ItemInit.amethyst_chestplate);
+        AMETHYST(Amethyst.MOD_ID + ":amethyst", 60, new int[]{7, 9, 11, 7}, 420, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.9f, () -> {
+            return Ingredient.fromItems(ItemInit.amethyst_ingot);
         });
 
         private static final int[] MAX_DAMAGE_ARRAY = new int[]{16, 16, 16, 16};
