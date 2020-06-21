@@ -1,0 +1,20 @@
+{
+
+  "itemGroup.amethysttab": "Amethyst",
+
+  "block.amethyst.amethyst_ore": "Amethyst Ore",
+  "block.amethyst.amethyst_block": "Amethyst Block",
+
+  "item.amethyst.amethyst_sword": "Amethyst Sword",
+  "item.amethyst.amethyst_pickaxe": "Amethyst Pickaxe",
+  "item.amethyst.amethyst_axe": "Amethyst Axe",
+  "item.amethyst.amethyst_shovel": "Amethyst Shovel",
+  "item.amethyst.amethyst_hoe": "Amethyst Hoe",
+
+  "item.amethyst.amethyst_ingot": "Amethyst",
+
+  "item.amethyst.amethyst_helmet": "Amethyst Helmet",
+  "item.amethyst.amethyst_chestplate": "Amethyst Chestplate",
+  "item.amethyst.amethyst_leggings": "Amethyst Leggings",
+  "item.amethyst.amethyst_boots": "Amethyst Boots"
+}

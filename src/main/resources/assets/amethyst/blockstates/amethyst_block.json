@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "amethyst:block/amethyst_block" }
+  }
+}

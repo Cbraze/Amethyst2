@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:emerald"
+  },
+  "result": "amethyst:amethyst_ingot",
+  "experience": 100.0,
+  "cookingtime": 500
+}
